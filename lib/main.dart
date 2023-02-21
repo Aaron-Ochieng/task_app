@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:theme_changer/db/db_helper.dart';
 import 'package:theme_changer/screens/home.dart';
-import 'package:theme_changer/services/all_bindings.dart';
 import 'package:theme_changer/services/theme_service.dart';
 
 Future<void> main() async {
@@ -21,7 +20,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Task App',
-      initialBinding: AllAppBindings(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
